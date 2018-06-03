@@ -1,0 +1,11 @@
+Napisz klasę, która będzie pozwalała na symulowanie działania automatycznego samoobsługowego ekspresu do kawy. 
+Ekspres powinien umożliwiać przygotowanie 3 rodzajów kawy : espresso, latte i capuccino. 
+A także dodanie do nich dodatkowych składników: 
+cukier biały, 
+cukier brązowy, 
+mleko sojowe, 
+mleko odtłuszczone, 
+bita śmietana, 
+yrop waniliowy. 
+Użytkownik powinien mieć możliwość dodania składników w dowolnej konfiguracji. 
+Przetestuj swoje rozwiązanie.
