@@ -1,0 +1,6 @@
+Napisz aplikację, która będzie symulowała działanie centrum ostrzegania o katastrofach. 
+Aplikacja powinna zawierać klasę CentrumOstrzegania, 
+która w przypadku wywołania metody wyslijOstrzezenie() powinna wysłać wiadomość do wszystkich zarejestrowanych użytkowników. 
+Aplikacja powinna dawać możliwość zarejestrowania nowych użytkowników. 
+Aplikacja powinna ostrzegać o 5 najpowszechniejszych zagrożeniach to znaczy: 
+TORNADO, POWÓDŹ, POŻAR, ZAMIEĆ i ZAGROŻENIE_BIOLOGICZNE.
