@@ -1,0 +1,8 @@
+. Zaimplementuj własną klasę Opcji, która pozwoli na opakowywanie obiektu danego typu. Klasa powinna mieć metody :
+•	get(), która zwróci obiekt jeśli został przypisany, a jeśli nie to rzuci wyjątek BrakElementuException
+•	isSet(), która będzie zwracała boolean mówiący czy Obiekt został przypisany
+•	set(), która pozwoli na przypisanie obiektu
+•	statyczna metoda empty(), która będzie zwracała pustą opcję (bez przypisanego elementu)
+•	getOrDefault(argument), która zwróci nam obiekt jeśli został przypisany
+lub w przeciwnym wypadku zwróci nam argument funkcji. Uwaga! Argument musi mieć taki sam typ jak obiekt w naszej opcji!
+•	konstruktor, który pozwoli stworzyc Opcję z obiektu jakiegoś typu.

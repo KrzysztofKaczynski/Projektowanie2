@@ -7,11 +7,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Day2GenericCalculator" />
+        <module name="Day2GenericOption" />
         <module name="Day2HowMany5" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Day2GenericCalculator" target="1.5" />
+      <module name="Day2GenericOption" target="1.5" />
       <module name="Day2HowMany5" target="1.5" />
       <module name="Zadania" target="1.5" />
     </bytecodeTargetLevel>
