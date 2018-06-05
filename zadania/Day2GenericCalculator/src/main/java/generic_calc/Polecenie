@@ -1,0 +1,5 @@
+2. Napisz prostą klasę  Kalkulator,
+która pozwoli na wykonanie wszystkich czterech podstawowych operacji matematycznych
+ na liczbach i zwrócenie wyniku tych operacji.
+ UWAGA! Aplikacja powinna zadziałać na wszystkich typach liczbowych w tym także tych z pakietu
+ java.util.concurrent.atomic!
