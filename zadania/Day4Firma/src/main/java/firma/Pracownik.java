@@ -17,6 +17,10 @@ abstract class Pracownik {
     private LocalDate localDate;
     private double zarobki;
 
+    public void setZarobki(double zarobki) {
+        this.zarobki = zarobki;
+    }
+
     @Override
     public String toString() {
         return "Pracownik{" +
@@ -26,6 +30,22 @@ abstract class Pracownik {
                 ", localDate=" + localDate +
                 ", zarobki=" + zarobki +
                 '}';
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setImie(String imie) {
+        this.imie = imie;
+    }
+
+    public void setNazwisko(String nazwisko) {
+        this.nazwisko = nazwisko;
+    }
+
+    public void setLocalDate(LocalDate localDate) {
+        this.localDate = localDate;
     }
 
     public Pracownik(int id, String imie, String nazwisko, LocalDate localDate, double zarobki) {

@@ -1,11 +1,15 @@
 package firma;
 
-        import java.util.*;
+import java.util.*;
 
-public class Wydzial  {
+public class Wydzial {
 
     private String nazwaDep;
-    private Set<PracownikWydzialu> pracownikWydzialu = new HashSet<>();
+    private Set<PracownikWydzialu> pracownicykWydzialu = new HashSet<>();
+
+    public Set<PracownikWydzialu> getPracownicykWydzialu() {
+        return pracownicykWydzialu;
+    }
 
     /**
      * . Zaimplementuj w klasie Wydział metody zartudnij(PracownikWydzialu pracownik)
@@ -19,8 +23,35 @@ public class Wydzial  {
      */
 
 
-public void zatrudnij(PracownikWydzialu pracownikWydzialu){
-    return;
+    public void zatrudnij(PracownikWydzialu pracownikWydzialu) throws PracowniWydziałuExeption, SprzedawcaZatrudnionyException {
 
-}
+
+        if (pracownikWydzialu != null) {
+            if (pracownicykWydzialu.contains(pracownikWydzialu)) {
+
+                throw new PracowniWydziałuExeption();
+            } else if
+                    (pracownicykWydzialu.add(pracownikWydzialu)) {
+            }
+            }else {
+                pracownicykWydzialu.add(Stanowisko.Sprzedawca);
+
+                throw new SprzedawcaZatrudnionyException();
+            }
+
+        }
+    }
+
+    public void zwolnij(PracownikWydzialu pracownikWydzialu) throws PracownikJuzZatrudException {
+        if (pracownikWydzialu != null) {
+            if (pracownicykWydzialu.contains(pracownikWydzialu)) {
+                throw new PracownikJuzZatrudException();
+            } else {
+                pracownicykWydzialu.remove(pracownikWydzialu);
+            }
+
+        }
+
+    }
+
 }

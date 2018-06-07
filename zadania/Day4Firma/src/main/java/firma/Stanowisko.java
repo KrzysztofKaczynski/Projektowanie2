@@ -2,6 +2,6 @@ package firma;
 
 public enum Stanowisko {
 
-    PROGRAMISTA, SPRZEDAWCA;
+    PROGRAMISTA, SPRZEDAWCA
 
 }
