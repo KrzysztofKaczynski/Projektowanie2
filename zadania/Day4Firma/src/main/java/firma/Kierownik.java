@@ -43,22 +43,47 @@ public class Kierownik extends Pracownik {
     }
 
 
-
     public void awansuj(PracownikWydzialu pracownikWydzialu, Stanowisko stanowisko) {
-        if(wydzial.getPracownicykWydzialu().contains(pracownikWydzialu));
+        if (wydzial.getPracownicykWydzialu().contains(pracownikWydzialu)) ;
         pracownikWydzialu.setStanowisko(stanowisko);
 
     }
 
-    public void podwyzka(List<PracownikWydzialu> pracownik, BigDecimal sumaPodwyzki){
-        if(wydzial.getPracownicykWydzialu().containsAll(pracownik)) {
+    public void podwyzka(List<PracownikWydzialu> pracownik, BigDecimal sumaPodwyzki) {
+        if (wydzial.getPracownicykWydzialu().containsAll(pracownik)) {
 
         }
         for (int i = 0; i < pracownik.size(); i++) {
-                pracownik.get(i);
-
+            pracownik.get(i);
 
         }
+        /**
+         * 11. Zaimplementuj w klasie Kierownik metody
+         * •	znajdzWolnychProgramistow(), która zwróci wszystkich programistów, którzy nie mają obecnie projektu
+         * •	przypiszProjekt(Programista programista, Projekt nazwaProjektu), która przypisze danemu programiscie projekt.
+         *          Jeżeli programista nie pracuje w dziale za który odpowiada dany kierownik, należy rzucić ZlyWydzialException().
+         * •	stwórzNowyProjekt(Projekt nazwaProjektu), która przypisze projekt nazwaProjektu,
+         *          wszystkim obecnie wolnym programistom projekt nazwaProjektu.
+         * •	skończProjekt(Projekt nazwaProjektu), która przypisze pustą opcje w polu projekt wszystkim programistą,
+         *          którzy obecnie pracują w projekcie nazwaProjektu
+         */
+    }
+
+    public void znajdzWolnychProgramistow(Programista wolnyProgramista, Projekt nowyProjekt) {
+        znajdzWolnychProgramistow(wolnyProgramista, nowyProjekt);
+
+    }
+
+    public void przypiszProjekt(Programista wolnyProgramista, Projekt nazwaProjektu) {
+        przypiszProjekt(wolnyProgramista, nazwaProjektu);
+    }
+
+    public void stworzNowyProjekt(Projekt nazwaProjektu) {
+        stworzNowyProjekt(nazwaProjektu);
+    }
+
+    public void skonczProjekt(Projekt nazwaProjektu) {
+        skonczProjekt(nazwaProjektu);
     }
 }
 
