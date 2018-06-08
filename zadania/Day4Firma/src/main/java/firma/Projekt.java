@@ -12,6 +12,30 @@ public class Projekt {
     private double cenaApp;
     private boolean isFinish;
 
+    public String getNazwaApp() {
+        return nazwaApp;
+    }
+
+    public void setNazwaApp(String nazwaApp) {
+        this.nazwaApp = nazwaApp;
+    }
+
+    public double getCenaApp() {
+        return cenaApp;
+    }
+
+    public void setCenaApp(double cenaApp) {
+        this.cenaApp = cenaApp;
+    }
+
+    public boolean isFinish() {
+        return isFinish;
+    }
+
+    public void setFinish(boolean finish) {
+        isFinish = finish;
+    }
+
     @Override
     public String toString() {
         return "Projekt{" +
@@ -26,4 +50,9 @@ public class Projekt {
         this.cenaApp = cenaApp;
         this.isFinish = isFinish;
     }
+    public void nowyProjekt(){
+
+    }
+
+
 }
