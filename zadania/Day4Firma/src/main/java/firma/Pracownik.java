@@ -3,7 +3,7 @@ package firma;
 import java.time.LocalDate;
 
 abstract class Pracownik {
-/*
+/**
 ⦁	zarobki
 ⦁	imie
 ⦁	nazwisko
@@ -16,6 +16,26 @@ abstract class Pracownik {
     private String nazwisko;
     private LocalDate localDate;
     private double zarobki;
+
+    public int getId() {
+        return id;
+    }
+
+    public String getImie() {
+        return imie;
+    }
+
+    public String getNazwisko() {
+        return nazwisko;
+    }
+
+    public LocalDate getLocalDate() {
+        return localDate;
+    }
+
+    public double getZarobki() {
+        return zarobki;
+    }
 
     public void setZarobki(double zarobki) {
         this.zarobki = zarobki;

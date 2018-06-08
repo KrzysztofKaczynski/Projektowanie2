@@ -55,7 +55,7 @@ public class Kierownik extends Pracownik {
 
         }
         for (int i = 0; i < pracownik.size(); i++) {
-                pracownik.
+                pracownik.get(i);
 
 
         }

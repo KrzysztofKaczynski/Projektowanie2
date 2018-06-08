@@ -1,8 +1,9 @@
 package firma;
 
-import java.util.*;
+        import java.util.*;
 
 public class Wydzial {
+
 
     private String nazwaDep;
     private Set<PracownikWydzialu> pracownicykWydzialu = new HashSet<>();
@@ -31,16 +32,14 @@ public class Wydzial {
 
                 throw new PracowniWydziałuExeption();
             } else if
-                    (pracownicykWydzialu.add(pracownikWydzialu)) {
-            }
-            }else {
-                pracownicykWydzialu.add(Stanowisko.Sprzedawca);
-
+                    (pracownicykWydzialu.contains(Stanowisko.SPRZEDAWCA)) {
                 throw new SprzedawcaZatrudnionyException();
             }
-
+        } else {
+            pracownicykWydzialu.add(pracownikWydzialu);
         }
     }
+
 
     public void zwolnij(PracownikWydzialu pracownikWydzialu) throws PracownikJuzZatrudException {
         if (pracownikWydzialu != null) {
@@ -49,9 +48,15 @@ public class Wydzial {
             } else {
                 pracownicykWydzialu.remove(pracownikWydzialu);
             }
-
         }
-
     }
 
+    /**
+     * Zaimplementuj w klasie Wydział metodę przyznajPremie(int premia),
+     * która przyznaje premie wszystkim pracownikom wydziału.
+     */
+    public void przyznajPremie(PracownikWydzialu pracownikWydzialu) {
+        pracownikWydzialu.setPremia(2000);
+
+    }
 }
