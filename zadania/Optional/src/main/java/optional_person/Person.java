@@ -1,27 +1,44 @@
 package optional_person;
 
+import java.util.Optional;
+
 public class Person {
+/**
+
+ */
 
     private int id;
     private String name;
     private String surname;
     private int age;
 
-    public int getId() {
-        return id;
+    public  Optional<Integer> getId() {
+        return Optional.ofNullable(id);
     }
 
-    public String getName() {
-        return name;
+    public Optional getName() {
+        return Optional.ofNullable(name);
     }
 
-    public String getSurname() {
-        return surname;
+    public Optional getSurname() {
+        return Optional.ofNullable(surname);
     }
 
-    public int getAge() {
-        return age;
+    public Optional<Integer> getAge() {
+        return Optional.ofNullable(age);
     }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", age=" + age +
+                '}';
+    }
+
+
 
     public Person(int id, String name, String surname, int age) {
         this.id = id;
@@ -29,4 +46,6 @@ public class Person {
         this.surname = surname;
         this.age = age;
     }
+
+
 }
